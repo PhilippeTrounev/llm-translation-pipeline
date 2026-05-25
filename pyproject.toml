@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-translation-pipeline"
+version = "0.1.0"
+description = "Reusable OCR, Markdown translation, cost estimation, and DOCX export CLI for long texts."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  { name = "Philippe Trounev" }
+]
+keywords = ["translation", "markdown", "ocr", "ollama", "bedrock", "mistral", "docx"]
+dependencies = []
+
+[project.optional-dependencies]
+bedrock = ["boto3", "botocore"]
+ocr = ["mistralai", "pypdf", "python-dotenv"]
+all = ["boto3", "botocore", "mistralai", "pypdf", "python-dotenv"]
+
+[project.scripts]
+llm-translate = "llm_translation_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

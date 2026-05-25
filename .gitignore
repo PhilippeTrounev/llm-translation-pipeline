@@ -1,0 +1,23 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.DS_Store
+
+# Generated pipeline outputs
+translation_chunks/
+translation_smoke*/
+mistral_ocr_md/
+md_ru/
+docx_ru/
+docx_out/
+*.log
+
+# User documents and large artifacts should stay out of the public repo.
+*.pdf
+*.docx
+*.doc
+*.epub
+*.zip
