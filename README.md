@@ -101,6 +101,8 @@ TRANSLATION_TEMPERATURE=0.1
 
 Never commit `.env`.
 
+For a step-by-step guide to creating the needed API keys, see [docs/GETTING_KEYS.md](docs/GETTING_KEYS.md).
+
 ## Provider Setup
 
 ### Ollama Cloud API
